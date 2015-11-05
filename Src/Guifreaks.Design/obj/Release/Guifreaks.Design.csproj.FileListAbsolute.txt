@@ -1,0 +1,10 @@
+C:\Bewaren\gf\Setup\2.0\Bin\NaviSuiteToolboxItems.xml
+C:\Bewaren\gf\Setup\2.0\Bin\Guifreaks.Design.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.csprojResolveAssemblyReference.cache
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.dll
+C:\Bewaren\gf\Setup\3.0\Bin\NaviSuiteToolboxItems.xml
+C:\Bewaren\gf\Setup\3.0\Bin\Guifreaks.Design.dll
+C:\Bewaren\guifreaks\Bin\NaviSuiteToolboxItems.xml
+C:\Bewaren\guifreaks\Bin\Guifreaks.Design.dll
+C:\Bewaren\guifreaks\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.csprojResolveAssemblyReference.cache
+C:\Bewaren\guifreaks\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.dll

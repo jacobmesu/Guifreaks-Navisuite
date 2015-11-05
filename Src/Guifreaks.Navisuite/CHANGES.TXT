@@ -1,0 +1,96 @@
+﻿Must haves (or bugs)
+- RTL text rendering fix (appears behind image)
+
+Should have (must have features)
+- Arabic translation
+
+Could have (nice to haves)
+
+- Change the height of the navigation popup
+- Reordering GroupView inside the band
+- NavigationBar button options with right click menu
+- Support for cut, copy and paste (design time) 
+- Add an option to show/hide the [navigation pane options] menu item inside the more options menu, in case you don't want to allow the user to change the buttons order.
+- Hide the separator under the [Add or remove buttons] menuitem when we don't have any overflow buttons.
+- Open the options form either center screen or center parent
+- Change the show more options button text to match the text used in MS Outlook (in letters case), that would be:
+	• Show More Buttons
+	• Show Fewer Buttons
+	• Navigation Pane Options... (Instead of "options of the navigation pane". This would be used as the title of the options forms as well)
+	• Add or Remove Buttons
+
+What's changed?
+
+2.0
+- TODO: Resize to both sides
+
+- New: Office 2010 themes: Blue, Silver and Black
+- New: Support for multiple languages, currently only Dutch and English. Please send us more translations if you can
+- New: When the overflow panel does not provide enough space for the small buttons, 
+  the button appear as menuitems
+- New: Support for imagelist, see ImagesLarge and ImagesSmall in the Navigation bar
+- New: Support for imageindex, see LargeImageIndex and SmallImageIndex in the Navigation band
+- New: Collapse support for the Office 2003 look and feel
+- New: Event when user clicks on collapsed band
+
+- Fixed: Whether the menu items show more buttons and show less buttons are enabled depends now on the amount of visible buttons. 
+- Fixed: Rewriten layoutengine
+- Fixed: Issues with reordering bands in design time. 
+
+0.3
+
+- Added design time categories and descriptions
+- Property (PopupMinWidth) for setting the minimum width of the popup
+- Property (PopupHeight) for setting the height of the popup
+- Additional samplebrowser containing improved samples and the source of the samples in 
+  Visual Basic .Net and C#
+  
+- Issue: Setting collapsed to true in designer raises null reference exception when running
+- Issue: Av when no activeband is selecting and user tries to collapse
+- Issue: Minor issues when the control contains no bands
+- Issue: Right to left changed when collapses did not update the popup
+- Issue: Incorrect resizing of the popup when collapsed and right to left layout
+- Issue: Errors in designer when using inheritance
+- Issue: Incorrect ordering of bands comparing design and runtime
+
+0.2
+
+- Bands is no longer prefered design time collection, but now is Controls collection the prefered
+  Bands.Add(Band) => Controls.Add(Band);
+- Band.Visible does not affect the visibility of the button. Use Band.ButtonVisible instead. 
+- Issue: Error when selecting green/silver office 2003 layout in designer. 
+- Issue: Redesigned the layout proccess. Improved stability and less 'layouting'
+- Issue: Reloading the settings from a file could cause the width to decrease. 
+- Issue: Reopening the form containing a Navigation Pane resets VisibleLargeButtons to zero.
+
+0.1
+
+- Save the layout to a stream (amount of visible buttons, order of buttons, visibility of buttons, 
+  collapsed state)
+- Navigation pane options form
+- Design time click on button
+- Clean up initialisation of layout engine in NaviBar
+- Right to left layout 
+- Installer
+- Background color for band 
+- Activeband property not working when selecting a band. (design time)
+- Office 2003 layout
+- Implementation of active button 
+- Need colors fixed on the gradient
+- ActiveButtonChanging event
+- ActiveButtonChanged event
+- VisibleButtons property
+- External management of the layout
+- Additional button in the compact button region containing the button options
+- Images in the options menu
+- Right to left layout in the navigation pane
+- BarBands linked to buttons
+- Header text of the active button
+- Being able to add controls design time to a band. 
+- Bands/buttons visible in document outline
+- Bands will change during design time when button is selected
+- Right to left layout for the groupview
+- Collapse the NavigationBar to compact mode
+- Text of active band when collapsed
+- Office 2007 Black layout
+- Office 2007 Silver layout

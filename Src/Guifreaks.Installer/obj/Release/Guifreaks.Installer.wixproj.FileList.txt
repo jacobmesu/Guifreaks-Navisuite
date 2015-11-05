@@ -1,0 +1,7 @@
+C:\Bewaren\guifreaks\Src\Guifreaks.Installer\bin\Release\cab1.cab
+C:\Bewaren\guifreaks\Src\Guifreaks.Installer\bin\Release\Guifreaks.Installer.msi
+C:\Bewaren\guifreaks\Src\Guifreaks.Installer\bin\Release\Guifreaks.Installer.wixpdb
+obj\Release\Product.wixobj
+obj\Release\Guifreaks.Installer.wixproj.BindContentsFileListnull.txt
+obj\Release\Guifreaks.Installer.wixproj.BindOutputsFileListnull.txt
+obj\Release\Guifreaks.Installer.wixproj.BindBuiltOutputsFileListnull.txt

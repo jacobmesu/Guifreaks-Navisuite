@@ -1,0 +1,17 @@
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.csprojResolveAssemblyReference.cache
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.FormMain.resources
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.Properties.Resources.resources
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.csproj.GenerateResource.Cache
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\NaviSuiteToolboxItems.xml
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.NavisuiteDemo.exe.config
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.NavisuiteDemo.pdb
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.Common.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.Navisuite.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.Navisuite.XmlSerializers.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.Common.pdb
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\Guifreaks.Navisuite.pdb
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\ar\Guifreaks.Navisuite.resources.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\bin\Debug\nl-nl\Guifreaks.Navisuite.resources.dll
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.NavisuiteDemo\obj\Debug\Guifreaks.NavisuiteDemo.pdb

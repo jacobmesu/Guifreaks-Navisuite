@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A36A411-799A-487A-A72F-86F786B4CF28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Guifreaks.Navisuite</RootNamespace>
+    <AssemblyName>Guifreaks.Navisuite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Colors\NaviColorTable.cs" />
+    <Compile Include="Colors\NaviColorTableOff10Black.cs" />
+    <Compile Include="Colors\NaviColorTableOff10Blue.cs" />
+    <Compile Include="Colors\NaviColorTableOff10Silver.cs" />
+    <Compile Include="Colors\NaviColorTableOff3Blue.cs" />
+    <Compile Include="Colors\NaviColorTableOff3Green.cs" />
+    <Compile Include="Colors\NaviColorTableOff3Silver.cs" />
+    <Compile Include="Colors\NaviColorTableOff7Black.cs" />
+    <Compile Include="Colors\NaviColorTableOff7Blue.cs" />
+    <Compile Include="Colors\NaviColorTableOff7Silver.cs" />
+    <Compile Include="Colors\NaviToolstripColorTable.cs">
+    </Compile>
+    <Compile Include="Common\NaviBandCollection.cs" />
+    <Compile Include="Common\NaviBandEnumerator.cs" />
+    <Compile Include="Common\NaviBandOrderComparer.cs" />
+    <Compile Include="Common\NaviBandOrgOrderComparer.cs" />
+    <Compile Include="Common\NaviBandSetting.cs" />
+    <Compile Include="Common\NaviBarSettings.cs" />
+    <Compile Include="Common\NaviControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviBand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviBandClientArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviBandCollapsed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviButtonCollapse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviButtonOptions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NaviGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Drawing\NaviOffice10Renderer.cs" />
+    <Compile Include="Drawing\NaviOffice3Renderer.cs" />
+    <Compile Include="Drawing\NaviOffice7Renderer.cs" />
+    <Compile Include="Drawing\NaviRenderer.cs" />
+    <Compile Include="Drawing\NaviToolstripRenderer.cs" />
+    <Compile Include="Forms\NaviBandPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NaviBandPopup.Designer.cs">
+      <DependentUpon>NaviBandPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NaviOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NaviOptionsForm.Designer.cs">
+      <DependentUpon>NaviOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\NaviLayoutEngine.cs" />
+    <Compile Include="Layout\NaviLayoutFactory.cs" />
+    <Compile Include="Layout\NaviLayoutStyle.cs" />
+    <Compile Include="Layout\NaviLayoutEngineOffice.cs" />
+    <Compile Include="Common\NaviBandEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Text.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Text.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Guifreaks.Common\Guifreaks.Common.csproj">
+      <Project>{76DCDCF5-D1EB-482B-8B6E-C56CA2476A5D}</Project>
+      <Name>Guifreaks.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\NaviBandPopup.resx">
+      <DependentUpon>NaviBandPopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NaviOptionsForm.resx">
+      <DependentUpon>NaviOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Up.png" />
+    <None Include="Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NaviBar.bmp" />
+    <EmbeddedResource Include="NaviGroup.bmp" />
+    <EmbeddedResource Include="Resources\Text.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Text.nl-nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Text.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Text.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CHANGES.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>sgen /compiler:/keyfile:$(ProjectDir)Key.snk /force /type:Guifreaks.Navisuite.NaviBarSettings "$(TargetDir)Guifreaks.Navisuite.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

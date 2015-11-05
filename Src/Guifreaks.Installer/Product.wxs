@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define ToolboxControlsInstallerPackageGuid = "{2c298b35-07da-45f1-96a3-be55d91c8d7a}" ?>
+<?define ProductShortName = "Guifreaks Navisuite" ?>
+<?define ProductVersion = "2.0.0" ?>
+<?define ProductVersionText = "2.0" ?>
+<?define Manufacturer = "Guifreaks" ?>
+<?define ProductCode = "50008326-c841-42a1-97e9-6dec49acbf6c" ?>
+<?define UpgradeCode = "b2831997-b964-4667-8e20-79c1c51a5804" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <Product Id="$(var.ProductCode)"
+         UpgradeCode="$(var.UpgradeCode)"
+         Name="$(var.ProductShortName) $(var.ProductVersionText)"
+         Version="$(var.ProductVersion)"
+         Language="1033"
+         Manufacturer="$(var.Manufacturer)">
+    
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <UIRef Id="WixUI_FeatureTree" />
+
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="topBanner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <Feature Id="GfNavisuiteCtrls" Title="Guifreaks Navisuite Controls" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="disallow">
+      <ComponentRef Id="GfCommon_component" />
+      <ComponentRef Id="GfDesign_component" />
+      <ComponentRef Id="GfNavisuite_component" />
+      <ComponentRef Id="GfNavisuiteDemo_component" />
+      <ComponentRef Id="GfNavisuiteXmlSerializers_component" />
+      <ComponentRef Id="nl_nl_GfNavisuiteresources_component" />
+      <ComponentRef Id="ar_GfNavisuiteresources_component" />      
+    </Feature>
+
+    <Feature Id="GfNavisuite_VisualStudio12Toolbox" Title="Register controls in Visual Studio 2013" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="GfNavisuite_VisualStudio12Toolbox" />
+    </Feature>
+
+    <Feature Id="GfNavisuite_VisualStudio11Toolbox" Title="Register controls in Visual Studio 2012" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="GfNavisuite_VisualStudio11Toolbox" />
+    </Feature>
+
+    <Feature Id="GfNavisuite_VisualStudio10Toolbox" Title="Register controls in Visual Studio 2010" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="GfNavisuite_VisualStudio10Toolbox" />
+    </Feature>
+    <!-- Properties -->
+    <Condition Message="An administrator must approve or install [ProductName]."> Privileged </Condition>
+  </Product>
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Guifreaks Navisuite">
+          <Component Id="GfCommon_component" Guid="*">
+            <File Id="Guifreaks.Common.dll"
+                  Name="Guifreaks.Common.dll"
+                  Assembly=".net"
+                  KeyPath="yes"
+                  Source="..\..\Bin\Guifreaks.Common.dll"
+                  DiskId="1" />
+          </Component>
+          <Component Id="GfDesign_component" Guid="*">
+            <File Id="Guifreaks.Design.dll"
+                 Name="Guifreaks.Design.dll"
+                 Assembly=".net"
+                 KeyPath="yes"
+                 Source="..\..\Bin\Guifreaks.Design.dll"
+                 DiskId="1" />
+          </Component>
+          <Component Id="GfNavisuite_component" Guid="*">
+            <File Id="Guifreaks.Navisuite.dll"
+                  Name="Guifreaks.Navisuite.dll"
+                  Assembly=".net"
+                  KeyPath="yes"
+                  Source="..\..\Bin\Guifreaks.Navisuite.dll"
+                  DiskId="1" />
+          </Component>
+          <Component Id="GfNavisuiteDemo_component" Guid="*">
+            <File Id="Guifreaks.NavisuiteDemo.exe"
+                  Name="Guifreaks.NavisuiteDemo.exe"
+                  KeyPath="yes"
+                  Source="..\..\Bin\Guifreaks.NavisuiteDemo.exe"
+                  DiskId="1" />
+          </Component>
+          <Component Id="GfNavisuiteXmlSerializers_component" Guid="*">
+            <File Id="Guifreaks.Navisuite.XmlSerializers.dll"
+                  Name="Guifreaks.Navisuite.XmlSerializers.dll"
+                  KeyPath="yes"
+                  Source="..\..\Bin\Guifreaks.Navisuite.XmlSerializers.dll"
+                  DiskId="1" />
+          </Component>
+          <Directory Id="nl_nl" Name="nl-nl">
+            <Component Id="nl_nl_GfNavisuiteresources_component" Guid="*">
+              <File Id="nlnl_Guifreaks.Navisuite.resources.dll"
+                    Name="Guifreaks.Navisuite.resources.dll"
+                    KeyPath="yes"
+                    Source="..\..\Bin\nl-nl\Guifreaks.Navisuite.resources.dll"
+                    DiskId="1" />
+            </Component>
+          </Directory>
+          <Directory Id="ar" Name="ar">
+            <Component Id="ar_GfNavisuiteresources_component" Guid="*">
+              <File Id="ar_Guifreaks.Navisuite.resources.dll"
+                    Name="ar_Guifreaks.Navisuite.resources.dll"
+                    KeyPath="yes"
+                    Source="..\..\Bin\ar\Guifreaks.Navisuite.resources.dll"
+                    DiskId="1" />
+            </Component>
+          </Directory>
+
+          <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2013 (Standard edition and higher) -->
+          <Component Id="GfNavisuite_VisualStudio12Toolbox" Guid="4849b2d9-633e-44d2-a074-9cd2428ee35b">
+            <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\Guifreaks.Navisuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7f6dc13cbca790ea" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+              <RegistryValue Type="string" Value="Guifreaks Navisuite"/>
+            </RegistryKey>
+
+            <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\Guifreaks.Navisuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7f6dc13cbca790ea" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+              <RegistryValue Type="string" Value="Guifreaks Navisuite"/>
+            </RegistryKey>
+          </Component>
+
+          <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2012 (Standard edition and higher) -->
+          <Component Id="GfNavisuite_VisualStudio11Toolbox" Guid="070998e5-c9f0-4672-86e7-0903d8ae821a">
+            <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\Guifreaks.Navisuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7f6dc13cbca790ea" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+              <RegistryValue Type="string" Value="Guifreaks Navisuite"/>
+            </RegistryKey>
+
+            <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\Guifreaks.Navisuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7f6dc13cbca790ea" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+              <RegistryValue Type="string" Value="Guifreaks Navisuite"/>
+            </RegistryKey>
+          </Component>
+
+          <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2010 (Standard edition and higher) -->
+          <Component Id="GfNavisuite_VisualStudio10Toolbox" Guid="47dd512f-c27e-4aee-826b-57b5a88860f0">
+            <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\Guifreaks.Navisuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7f6dc13cbca790ea" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+              <RegistryValue Type="string" Value="Guifreaks Navisuite"/>
+            </RegistryKey>
+          </Component>
+
+        </Directory>
+      </Directory>
+
+
+    </Directory>
+  </Fragment>
+</Wix>
