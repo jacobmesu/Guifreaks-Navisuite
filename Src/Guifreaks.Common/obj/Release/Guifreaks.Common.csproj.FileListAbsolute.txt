@@ -1,7 +1,0 @@
-C:\Bewaren\gf\Setup\2.0\Bin\Guifreaks.Common.dll
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\obj\Release\Guifreaks.Common.dll
-C:\Bewaren\gf\Setup\3.0\Bin\Guifreaks.Common.dll
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\obj\Release\Guifreaks.Common.csprojResolveAssemblyReference.cache
-C:\Bewaren\guifreaks\Bin\Guifreaks.Common.dll
-C:\Bewaren\guifreaks\Src\Guifreaks.Common\obj\Release\Guifreaks.Common.csprojResolveAssemblyReference.cache
-C:\Bewaren\guifreaks\Src\Guifreaks.Common\obj\Release\Guifreaks.Common.dll

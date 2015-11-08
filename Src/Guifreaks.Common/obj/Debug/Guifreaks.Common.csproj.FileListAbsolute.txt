@@ -1,5 +1,0 @@
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\bin\Debug\Guifreaks.Common.dll
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\bin\Debug\Guifreaks.Common.pdb
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\obj\Debug\Guifreaks.Common.csprojResolveAssemblyReference.cache
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\obj\Debug\Guifreaks.Common.dll
-C:\Bewaren\gf\NaviSuite3\Src\Guifreaks.Common\obj\Debug\Guifreaks.Common.pdb

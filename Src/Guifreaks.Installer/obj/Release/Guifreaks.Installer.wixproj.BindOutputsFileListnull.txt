@@ -1,3 +1,0 @@
-C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.Installer\bin\Release\cab1.cab
-C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.Installer\bin\Release\Guifreaks.Installer.msi
-C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.Installer\bin\Release\Guifreaks.Installer.wixpdb
