@@ -8,3 +8,7 @@ C:\Bewaren\guifreaks\Bin\NaviSuiteToolboxItems.xml
 C:\Bewaren\guifreaks\Bin\Guifreaks.Design.dll
 C:\Bewaren\guifreaks\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.csprojResolveAssemblyReference.cache
 C:\Bewaren\guifreaks\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.Design.dll
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.csprojResolveAssemblyReference.cache
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.Design\obj\Release\Guifreaks.Design.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\CHANGES.TXT

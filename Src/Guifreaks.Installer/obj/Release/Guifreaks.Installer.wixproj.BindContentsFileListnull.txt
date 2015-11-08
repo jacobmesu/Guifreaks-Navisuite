@@ -1,7 +1,9 @@
-..\..\Bin\ar\Guifreaks.Navisuite.resources.dll
-..\..\Bin\Guifreaks.Common.dll
-..\..\Bin\Guifreaks.Design.dll
-..\..\Bin\Guifreaks.Navisuite.dll
-..\..\Bin\Guifreaks.Navisuite.XmlSerializers.dll
-..\..\Bin\Guifreaks.NavisuiteDemo.exe
-..\..\Bin\nl-nl\Guifreaks.Navisuite.resources.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\ar\Guifreaks.Navisuite.resources.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\CHANGES.TXT
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.Common.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.Design.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.Navisuite.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.Navisuite.XmlSerializers.dll
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.NavisuiteDemo.exe.config
+C:\Bewaren\Guifreaks-Navisuite\Bin\nl-nl\Guifreaks.Navisuite.resources.dll

@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.10</ProductVersion>
-    <ProjectGuid>dfea4d02-27ac-479e-9814-c8a61e2a5e95</ProjectGuid>
+    <ProjectGuid>aa3ae6d2-b3b3-49d8-b9c8-f77d609391ff</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>Guifreaks.Installer</OutputName>
     <OutputType>Package</OutputType>
@@ -19,23 +19,56 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <LinkerAdditionalOptions>
-    </LinkerAdditionalOptions>
     <SuppressIces>ICE57</SuppressIces>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dialog.bmp" />
+    <Content Include="Guifreaks.Installer.wax" />
+    <Content Include="license.rtf" />
+    <Content Include="topBanner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Guifreaks.Common\Guifreaks.Common.csproj">
+      <Name>Guifreaks.Common</Name>
+      <Project>{76dcdcf5-d1eb-482b-8b6e-c56ca2476a5d}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\Guifreaks.Design\Guifreaks.Design.csproj">
+      <Name>Guifreaks.Design</Name>
+      <Project>{145cbe7b-f2a5-4f4d-a0bf-7b6a92fafaa9}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\Guifreaks.NavisuiteDemo\Guifreaks.NavisuiteDemo.csproj">
+      <Name>Guifreaks.NavisuiteDemo</Name>
+      <Project>{71ed8374-1f1c-465d-baaa-181ff0c7b335}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\Guifreaks.Navisuite\Guifreaks.Navisuite.csproj">
+      <Name>Guifreaks.Navisuite</Name>
+      <Project>{0a36a411-799a-487a-a72f-86f786b4cf28}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WixExtension Include="WixUIExtension">
       <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
       <Name>WixUIExtension</Name>
     </WixExtension>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="dialog.bmp" />
-    <Content Include="license.rtf" />
-    <Content Include="topBanner.bmp" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--

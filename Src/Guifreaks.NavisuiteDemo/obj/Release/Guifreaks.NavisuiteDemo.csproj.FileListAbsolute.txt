@@ -17,3 +17,11 @@ C:\Bewaren\guifreaks\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.Navisuite
 C:\Bewaren\guifreaks\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.Properties.Resources.resources
 C:\Bewaren\guifreaks\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.csproj.GenerateResource.Cache
 C:\Bewaren\guifreaks\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.NavisuiteDemo.exe.config
+C:\Bewaren\Guifreaks-Navisuite\Bin\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.csprojResolveAssemblyReference.cache
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.FormMain.resources
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.Properties.Resources.resources
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.csproj.GenerateResource.Cache
+C:\Bewaren\Guifreaks-Navisuite\Src\Guifreaks.NavisuiteDemo\obj\Release\Guifreaks.NavisuiteDemo.exe
+C:\Bewaren\Guifreaks-Navisuite\Bin\CHANGES.TXT
