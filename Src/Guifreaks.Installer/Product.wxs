@@ -56,16 +56,16 @@
   <Fragment>
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <Component Id="Guifreaks.Common.dll" Guid="f2ed060f-36cf-4ae1-a3ff-e9c1ba74c335">
-        <File Id="Guifreaks.Common.dll" Name="Guifreaks.Common.dll" Source="$(var.Guifreaks.Common_TargetDir)Guifreaks.Common.dll" />
+        <File Id="Guifreaks.Common.dll" Name="Guifreaks.Common.dll" Source="$(var.Guifreaks.Common_TargetDir)Guifreaks.Common.dll" Assembly=".net" KeyPath="yes" />
       </Component>
       <Component Id="CHANGES.TXT" Guid="397bca1e-47a8-415d-a41e-41368363e97c">
         <File Id="CHANGES.TXT" Name="CHANGES.TXT" Source="$(var.Guifreaks.Design_TargetDir)CHANGES.TXT" />
       </Component>
       <Component Id="Guifreaks.Design.dll" Guid="14987867-8658-4d3b-ac94-3eb0dda7f56d">
-        <File Id="Guifreaks.Design.dll" Name="Guifreaks.Design.dll" Source="$(var.Guifreaks.Design_TargetDir)Guifreaks.Design.dll" />
+        <File Id="Guifreaks.Design.dll" Name="Guifreaks.Design.dll" Source="$(var.Guifreaks.Design_TargetDir)Guifreaks.Design.dll" Assembly=".net" KeyPath="yes" />
       </Component>
       <Component Id="Guifreaks.Navisuite.dll" Guid="ef48005a-a88a-40ed-ad3a-48c7dc61c7fe">
-        <File Id="Guifreaks.Navisuite.dll" Name="Guifreaks.Navisuite.dll" Source="$(var.Guifreaks.Design_TargetDir)Guifreaks.Navisuite.dll" />
+        <File Id="Guifreaks.Navisuite.dll" Name="Guifreaks.Navisuite.dll" Source="$(var.Guifreaks.Design_TargetDir)Guifreaks.Navisuite.dll" Assembly=".net" KeyPath="yes" />
       </Component>
       <Component Id="Guifreaks.Navisuite.XmlSerializers.dll" Guid="c921216d-56f7-45c2-8edd-ff642feaa163">
         <File Id="Guifreaks.Navisuite.XmlSerializers.dll" Name="Guifreaks.Navisuite.XmlSerializers.dll" Source="$(var.Guifreaks.NavisuiteDemo_TargetDir)Guifreaks.Navisuite.XmlSerializers.dll" />
